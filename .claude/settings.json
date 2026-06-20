@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run validate)",
+      "Bash(npm run agent:validate)",
+      "Bash(git status)",
+      "Bash(git diff --stat)",
+      "Bash(git diff --name-only)"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(git reset --hard)",
+      "Bash(git clean -fd)",
+      "Bash(npm audit fix --force)",
+      "Bash(npm update)",
+      "Edit(.env)",
+      "Edit(**/.env*)",
+      "Edit(**/*secret*)",
+      "Edit(**/*private*)"
+    ]
+  }
+}
